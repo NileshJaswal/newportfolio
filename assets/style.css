@@ -1,1 +1,40 @@
-/* No CSS *//*# sourceMappingURL=style.css.map */
+.btn {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  color: #DBFFFF;
+  font-family: Montserrat;
+  background: #5222D0;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 6px;
+}
+
+.btn:hover, .btn:focus {
+  background: #3908b6;
+}
+
+p,
+h3,
+a {
+  font-family: Montserrat;
+}
+
+.page .nav-section .navbar .btn {
+  margin-left: 86px;
+}
+
+.page .nav-section .navbar .navbar-brand {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  color: #1F2626;
+}
+
+.page .nav-section .navbar .navbar-nav .nav-link {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  color: #1F2626;
+}
+/*# sourceMappingURL=style.css.map */

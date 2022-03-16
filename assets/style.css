@@ -3,21 +3,21 @@
   font-size: 16px;
   line-height: 20px;
   color: #DBFFFF;
-  font-family: Montserrat;
-  background: #5222D0;
+  font-family: "Poppins", sans-serif;
+  background: #676CDB;
   border: none;
-  padding: 12px 20px;
-  border-radius: 6px;
+  padding: 10px 20px;
+  border-radius: 0;
 }
 
 .btn:hover, .btn:focus {
-  background: #3908b6;
+  background: #5d62c5;
 }
 
 p,
 h3,
 a {
-  font-family: Montserrat;
+  font-family: "Poppins", sans-serif;
 }
 
 .page .nav-section .navbar .btn {

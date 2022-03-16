@@ -1,0 +1,57 @@
+// Global Variables
+$primary-font: Montserrat;
+$primary-color:#1F2626;
+$primary-bg: #5222D0;
+$primary-bg-focus: #3908b6;
+
+@mixin typotext {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    color: $primary-color;
+}
+
+// Global Components
+.btn {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    color: #DBFFFF;
+    font-family: $primary-font;
+    background: $primary-bg;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 6px;
+
+    &:hover,
+    &:focus {
+        background: $primary-bg-focus;
+    }
+}
+
+p,
+h3,
+a {
+    font-family: $primary-font;
+}
+
+// Custom Section
+.page {
+    .nav-section {
+        .navbar {
+            .btn {
+                margin-left: 86px;
+            }
+
+            .navbar-brand {
+                @include typotext;
+            }
+
+            .navbar-nav {
+                .nav-link {
+                    @include typotext;
+                }
+            }
+        }
+    }
+}

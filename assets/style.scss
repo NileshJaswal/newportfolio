@@ -1,6 +1,7 @@
 // Global Variables
-$primary-font: 'Poppins', sans-serif;
-$primary-color:#1F2626;
+$primary-font: 'Poppins',
+sans-serif;
+$primary-color:#fff;
 $primary-bg: #676CDB;
 $primary-bg-focus: #5d62c5;
 
@@ -9,6 +10,14 @@ $primary-bg-focus: #5d62c5;
     font-size: 16px;
     line-height: 20px;
     color: $primary-color;
+    font-family: $primary-font;
+}
+
+@mixin typotext2 {
+    font-family: $primary-font;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
 }
 
 // Global Components
@@ -37,6 +46,10 @@ a {
 
 // Custom Section
 .page {
+    background: #222A36F2;
+    color: #fff;
+
+    // Navbar
     .nav-section {
         .navbar {
             .btn {
@@ -45,13 +58,80 @@ a {
 
             .navbar-brand {
                 @include typotext;
+                color: #fff;
             }
 
-            .navbar-nav {
-                .nav-link {
-                    @include typotext;
+            .navbar-collapse {
+                justify-content: center;
+
+                .navbar-nav {
+                    .nav-item{
+                        margin-right: 24px;
+                    }
+                    .nav-link {
+                        @include typotext;
+                        color: #fff;
+                    }
                 }
             }
         }
+    }
+
+    // Hero Section
+    .hero-section {
+        height: 700px;
+        display: flex;
+
+        .hero-content {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+
+            h3 {
+                max-width: 753px;
+                font-family: 'Playfair Display', serif;
+                font-style: normal;
+                font-weight: 700;
+                font-size: 90px;
+                line-height: 120%;
+            }
+
+            .hero-content-bottom {
+                max-width: 420px;
+
+                p {
+                    color: rgba(255, 255, 255, 0.5);
+                    @include typotext2;
+                    line-height: 35px;
+                }
+
+                a {
+                    @include typotext2;
+                    line-height: 24px;
+                    text-decoration-line: underline;
+                    color: #fff;
+                    margin-left: 32px;
+                    i {
+                        margin-right: 10px;
+                    }
+                }
+
+                .btn {
+                    padding: 20px 40px !important;
+                    font-weight: 400 !important;
+                    font-size: 20px !important;
+                    line-height: 24px !important;
+                    i {
+                        margin-right: 10px;
+                    }
+                }
+            }
+        }
+    }
+
+    // Skills
+    .skills-section{
+        height: 200px;
+        background: #000;
     }
 }

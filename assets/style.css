@@ -213,11 +213,42 @@ a {
   background: #C4C4C4;
   -webkit-transition: all ease-in .3s;
   transition: all ease-in .3s;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.page .experiences .container .exp-blocks .blocks-section .block .content {
+  margin: 30px;
+  width: 106px;
+  color: #222A36;
+  -webkit-transition: all ease-in .3s;
+  transition: all ease-in .3s;
+}
+
+.page .experiences .container .exp-blocks .blocks-section .block .content i {
+  font-size: 30px;
+}
+
+.page .experiences .container .exp-blocks .blocks-section .block .content p {
+  margin: 0;
+  margin-top: 10px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 120%;
 }
 
 .page .experiences .container .exp-blocks .blocks-section .block:hover {
   background: #676CDB;
   -webkit-transform: scale(1.01);
           transform: scale(1.01);
+}
+
+.page .experiences .container .exp-blocks .blocks-section .block:hover .content {
+  color: #fff;
 }
 /*# sourceMappingURL=style.css.map */

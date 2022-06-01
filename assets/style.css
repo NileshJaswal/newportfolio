@@ -158,4 +158,66 @@ a {
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
 }
+
+.page .experiences {
+  padding: 100px 0;
+  background: #222A36;
+}
+
+.page .experiences .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.page .experiences .container .exp-text {
+  width: 207px;
+  margin-right: 96px;
+}
+
+.page .experiences .container .exp-text h3 {
+  font-weight: 700;
+  font-size: 100px;
+  line-height: 120%;
+  color: #676CDB;
+  font-family: 'Playfair Display', serif;
+}
+
+.page .experiences .container .exp-text p {
+  font-family: 'Playfair Display';
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 180%;
+}
+
+.page .experiences .container .exp-blocks h3 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 180%;
+  text-align: center;
+  width: 800px;
+}
+
+.page .experiences .container .exp-blocks .blocks-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.page .experiences .container .exp-blocks .blocks-section .block {
+  width: 288px;
+  height: 295px;
+  background: #C4C4C4;
+  -webkit-transition: all ease-in .3s;
+  transition: all ease-in .3s;
+}
+
+.page .experiences .container .exp-blocks .blocks-section .block:hover {
+  background: #676CDB;
+  -webkit-transform: scale(1.01);
+          transform: scale(1.01);
+}
 /*# sourceMappingURL=style.css.map */

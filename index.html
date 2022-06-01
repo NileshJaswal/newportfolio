@@ -32,6 +32,9 @@
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"
     integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 
+  <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+
+
   <title>Nilesh Jaswal</title>
 </head>
 
@@ -74,14 +77,21 @@
     </div>
     <div class="container hero-section">
       <div class="hero-content">
-        <h3>Hello! <br>
-          I’m Nilesh Jaswal</h3>
-        <div class="hero-content-bottom">
-          <p>I’am freelance <span>Front-end web developer</span> based in Indonesia who loves to craft attractive design
-            experiences for the web.</p>
-          <button class="btn btn-outline-success"><i class="bi bi-envelope"></i>Email me</button> <a href="#"><i
-              class="bi bi-download"></i>Download CV</a>
+        <div class="heroleft">
+          <h3>Hello! <br>
+            I’m Nilesh Jaswal</h3>
+          <div class="hero-content-bottom">
+            <p>I’am freelance <span>Front-end web developer</span> based in Indonesia who loves to craft attractive
+              design
+              experiences for the web.</p>
+            <button class="btn btn-outline-success"><i class="bi bi-envelope"></i>Email me</button> <a href="#"><i
+                class="bi bi-download"></i>Download CV</a>
+          </div>
         </div>
+        <div class="heroright">
+          <lottie-player src="https://assets3.lottiefiles.com/packages/lf20_jd8ofsrz.json"  background="transparent"  speed="1"  style="width: 500px; height: 500px;"  loop  autoplay></lottie-player>
+        </div>
+
       </div>
     </div>
     <div class="skills-section">
@@ -131,7 +141,19 @@
     </div>
     <div class="connect-section">
       <div class="container">
-        <script type="text/javascript" src="https://form.jotform.com/jsform/221512003806441"></script>
+        <div class="thetext">
+          <h3>Let’s
+            Connect</h3>
+          <ul class="social-icons">
+            <li><i class="bi bi-linkedin"></i></li>
+            <li><i class="bi bi-instagram"></i></li>
+            <li><i class="bi bi-github"></i></li>
+            <li><i class="bi bi-youtube"></i></li>
+          </ul>
+        </div>
+        <div class="theform">
+          <script type="text/javascript" src="https://form.jotform.com/jsform/221512003806441"></script>
+        </div>
       </div>
     </div>
   </div>
@@ -157,6 +179,10 @@
       $(head).append(css);
     });
 
+
+    /*     $('#callform').click(function(){
+         
+    }); */
   </script>
 </body>
 

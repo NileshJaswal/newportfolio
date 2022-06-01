@@ -177,13 +177,13 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
 }
 
 .page .hero-section .hero-content h3 {
@@ -355,9 +355,64 @@ a {
   background: #676CDB;
   -webkit-transform: scale(1.01);
           transform: scale(1.01);
+  cursor: pointer;
 }
 
 .page .experiences .container .exp-blocks .blocks-section .block:hover .content {
   color: #fff;
+}
+
+.page .connect-section {
+  background: #000;
+  padding: 100px 0;
+}
+
+.page .connect-section .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.page .connect-section .thetext {
+  width: 483px;
+}
+
+.page .connect-section .thetext h3 {
+  font-family: 'Poppins';
+  font-weight: 700;
+  font-size: 100px;
+  line-height: 120%;
+}
+
+.page .connect-section .thetext ul {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0;
+}
+
+.page .connect-section .thetext ul i {
+  font-size: 30px;
+  margin-right: 32px;
+}
+
+.page .connect-section .theform {
+  width: 100%;
+}
+
+.page .connect-section .theform .btn {
+  font-size: 24px;
+  padding: 20px 40px;
+}
+
+.page .connect-section .theform .btn i {
+  margin-right: 16px;
 }
 /*# sourceMappingURL=style.css.map */

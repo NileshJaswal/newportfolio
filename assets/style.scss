@@ -174,9 +174,6 @@ a {
     // Navbar
     .nav-section {
         .navbar {
-            .btn {
-                margin-left: 86px;
-            }
 
             .navbar-brand {
                 @include typotext;
@@ -184,7 +181,7 @@ a {
             }
 
             .navbar-collapse {
-                justify-content: center;
+                justify-content: end;
 
                 .navbar-nav {
                     .nav-item {
@@ -371,7 +368,7 @@ a {
         .container{
             display: flex; 
             align-items: center;
-            justify-content: space-between;
+            justify-content: space-evenly;
         }
         .thetext {
             width: 483px;
@@ -395,12 +392,11 @@ a {
         }
 
         .theform {
-            width: 100%;
-            .btn{
-                font-size: 24px;
-                padding: 20px 40px;
-                i{
-                    margin-right: 16px;
+            .modal-content{
+                background: transparent;
+                border: none;
+                iframe{
+                    height: 553px !important;
                 }
             }
         }

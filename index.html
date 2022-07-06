@@ -154,7 +154,7 @@
   </div>
 
   <div class="toast-container position-fixed bottom-0 end-0 p-3">
-    <div id="liveToast" class="toast show" role="alert" aria-live="assertive" aria-atomic="true">
+    <div id="liveToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
       <div class="toast-header">
         <strong class="me-auto">Nilesh</strong>
         <small>Just Now</small>
@@ -178,6 +178,15 @@
       $('.portfolio-loader').css('display', 'none');
       $('body').css('overflow', 'auto');
     }, 2000);
+
+    setTimeout(function () {
+      $('#liveToast').addClass('show');
+    }, 5000);
+
+    setTimeout(function () {
+      $('#liveToast').removeClass('show');
+    }, 11000);
+
 
     $("#221862026441449").on("load", function () {
       let head = $("#221862026441449").contents().find("head");

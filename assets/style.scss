@@ -1,6 +1,7 @@
-html{
+html {
     scroll-behavior: smooth;
 }
+
 // Global Variables
 $primary-font: 'Poppins',
 sans-serif;
@@ -323,8 +324,11 @@ a {
                     margin-top: 20px;
 
                     .block {
-                        width: 288px;
-                        height: 295px;
+                        @media (min-width:1300px) {
+                            width: 288px;
+                            height: 295px;
+                        }
+
                         background: #C4C4C4;
                         transition: all ease-in .3s;
                         display: flex;
@@ -368,13 +372,16 @@ a {
     .connect-section {
         background: #000;
         padding: 100px 0;
-        .container{
-            display: flex; 
+
+        .container {
+            display: flex;
             align-items: center;
             justify-content: space-evenly;
         }
+
         .thetext {
             width: 483px;
+
             h3 {
                 font-family: 'Poppins';
                 font-weight: 700;
@@ -395,12 +402,99 @@ a {
         }
 
         .theform {
-            .modal-content{
+            .modal-content {
                 background: transparent;
                 border: none;
-                iframe{
+
+                iframe {
                     height: 553px !important;
                 }
+            }
+        }
+    }
+}
+
+// Mobile
+@media (max-width:764px) {
+    .page {
+        .hero-section {
+            height: auto;
+
+            .hero-content {
+                flex-direction: column;
+
+                .heroleft {
+                    margin-top: 54px;
+
+                    h3 {
+                        font-size: 44px;
+                        line-height: 113%;
+                    }
+
+                    .hero-content-bottom {
+                        p {
+                            font-size: 18px;
+                            line-height: 34px;
+                        }
+
+                        .btn {
+                            font-size: 17px !important;
+                        }
+                    }
+
+                }
+            }
+        }
+
+        .skills-section {
+            height: auto;
+
+            .icons {
+                flex-direction: column;
+                align-items: center;
+
+                img {
+                    width: 50%;
+                    margin-bottom: 40px;
+                }
+            }
+        }
+
+        .experiences {
+            padding: 70px 0px;
+
+            .container {
+                flex-direction: column;
+
+                .exp-text {
+                    width: auto;
+                    margin-right: 0px;
+
+                    p {
+                        font-size: 34px;
+                        line-height: 155%;
+                    }
+                }
+
+                .exp-blocks {
+                    h3 {
+                        font-size: 22px;
+                        line-height: 161%;
+                        font-weight: 500;
+                        text-align: left;
+                    }
+
+                    .blocks-section {
+                        flex-direction: column;
+                    }
+                }
+            }
+        }
+
+        .connect-section {
+            padding: 50px 0;
+            .container {
+                flex-direction: column;
             }
         }
     }

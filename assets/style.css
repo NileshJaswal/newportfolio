@@ -317,8 +317,6 @@ a {
 }
 
 .page .experiences .container .exp-blocks .blocks-section .block {
-  width: 288px;
-  height: 295px;
   background: #C4C4C4;
   -webkit-transition: all ease-in .3s;
   transition: all ease-in .3s;
@@ -328,6 +326,13 @@ a {
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
+}
+
+@media (min-width: 1300px) {
+  .page .experiences .container .exp-blocks .blocks-section .block {
+    width: 288px;
+    height: 295px;
+  }
 }
 
 .page .experiences .container .exp-blocks .blocks-section .block .content {
@@ -410,5 +415,85 @@ a {
 
 .page .connect-section .theform .modal-content iframe {
   height: 553px !important;
+}
+
+@media (max-width: 764px) {
+  .page .hero-section {
+    height: auto;
+  }
+  .page .hero-section .hero-content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .page .hero-section .hero-content .heroleft {
+    margin-top: 54px;
+  }
+  .page .hero-section .hero-content .heroleft h3 {
+    font-size: 44px;
+    line-height: 113%;
+  }
+  .page .hero-section .hero-content .heroleft .hero-content-bottom p {
+    font-size: 18px;
+    line-height: 34px;
+  }
+  .page .hero-section .hero-content .heroleft .hero-content-bottom .btn {
+    font-size: 17px !important;
+  }
+  .page .skills-section {
+    height: auto;
+  }
+  .page .skills-section .icons {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .page .skills-section .icons img {
+    width: 50%;
+    margin-bottom: 40px;
+  }
+  .page .experiences {
+    padding: 70px 0px;
+  }
+  .page .experiences .container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .page .experiences .container .exp-text {
+    width: auto;
+    margin-right: 0px;
+  }
+  .page .experiences .container .exp-text p {
+    font-size: 34px;
+    line-height: 155%;
+  }
+  .page .experiences .container .exp-blocks h3 {
+    font-size: 22px;
+    line-height: 161%;
+    font-weight: 500;
+    text-align: left;
+  }
+  .page .experiences .container .exp-blocks .blocks-section {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .page .connect-section {
+    padding: 50px 0;
+  }
+  .page .connect-section .container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
 }
 /*# sourceMappingURL=style.css.map */
